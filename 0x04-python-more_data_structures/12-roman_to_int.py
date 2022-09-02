@@ -4,20 +4,7 @@ def roman_to_int(roman_string):
     if type(roman_string) is not str or roman_string is None:
         return (0)
     total = 0
-    r_dic = {
-            "I" :1,
-            "III": 3,
-            "IV": 4,
-            "V": 5,
-            "X": 10,
-            "XXI": 21,
-            "L": 50,
-            "LXXXIX": 89,
-            "XCIX": 99,
-            "C": 100,
-            "CXXIV": 124,
-            "D": 500,
-            "M": 1000}
+    r_dic = {"I" :1,"III": 3,"IV": 4,"V": 5,"X": 10,"XXI": 21,"L": 50,"LXXXIX": 89,"XCIX": 99,"C": 100,"CXXIV": 124,"D": 500,"M": 1000}
     for idx in range(len(roman_string)):
         i = r_dic.get(roman_string[idx])
         if (idx < len(roman_string) - 1):
