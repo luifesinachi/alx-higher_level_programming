@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // script that searches the second biggest integer in the list of argument
-const args = process.argv.slice(2);
+const args = process.argv.slice(10);
 const argsInt = args.map(s => parseInt(s));
 if (args.length === 0 || args.length === 1) {
   console.log('0');
